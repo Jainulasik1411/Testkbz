@@ -1,0 +1,6 @@
+2025/12/09-17:17:41.341 3140 Creating DB c:\Amazonq_Aiautomation\temp-profile-1765280855756.2734\Default\IndexedDB\https_staging.flow.stax.run_0.indexeddb.leveldb since it was missing.
+2025/12/09-17:17:41.353 3140 Reusing MANIFEST c:\Amazonq_Aiautomation\temp-profile-1765280855756.2734\Default\IndexedDB\https_staging.flow.stax.run_0.indexeddb.leveldb/MANIFEST-000001
+2025/12/09-17:17:41.369 5660 Level-0 table #5: started
+2025/12/09-17:17:41.376 5660 Level-0 table #5: 1300 bytes OK
+2025/12/09-17:17:41.379 5660 Delete type=0 #3
+2025/12/09-17:17:41.380 3140 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

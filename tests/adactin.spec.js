@@ -1,0 +1,59 @@
+const { chromium } = require('playwright');
+
+(async () => {
+  const browser = await chromium.launch({ headless: false });
+  const page = await browser.newPage();
+  
+  await page.goto('https://adactinhotelapp.com/');
+  await page.waitForTimeout(2000);
+  await page.fill('input[name="username"]', 'jainulasik');
+  await page.waitForTimeout(500);
+  await page.fill('input[name="password"]', 'Asik@2324');
+  await page.waitForTimeout(500);
+  await page.click('input[name="login"]');
+  await page.waitForTimeout(2000);
+  await page.selectOption('select[name="location"]', 'London');
+  await page.waitForTimeout(500);
+  await page.selectOption('select[name="hotels"]', 'Hotel Sunshine');
+  await page.waitForTimeout(500);
+  await page.selectOption('select[name="room_type"]', 'Deluxe');
+  await page.waitForTimeout(500);
+  await page.selectOption('select[name="room_nos"]', '4');
+  await page.waitForTimeout(500);
+  await page.fill('input[name="datepick_in"]', '25/12/2025');
+  await page.waitForTimeout(500);
+  await page.fill('input[name="datepick_out"]', '30/12/2025');
+  await page.waitForTimeout(500);
+  await page.selectOption('select[name="adult_room"]', '1');
+  await page.waitForTimeout(500);
+  await page.selectOption('select[name="child_room"]', '1');
+  await page.waitForTimeout(500);
+  await page.click('input[name="Submit"]');
+  await page.waitForTimeout(2000);
+  await page.click('input[type="radio"]');
+  await page.waitForTimeout(500);
+  await page.click('input[name="continue"]');
+  await page.waitForTimeout(2000);
+  await page.fill('input[name="first_name"]', 'Jainul');
+  await page.waitForTimeout(500);
+  await page.fill('input[name="last_name"]', 'Asik');
+  await page.waitForTimeout(500);
+  await page.fill('textarea[name="address"]', '2/45 , West street , Chennai.');
+  await page.waitForTimeout(500);
+  await page.fill('input[name="cc_num"]', '1234567890123456');
+  await page.waitForTimeout(500);
+  await page.selectOption('select[name="cc_type"]', 'VISA');
+  await page.waitForTimeout(500);
+  await page.selectOption('select[name="cc_exp_month"]', 'May');
+  await page.waitForTimeout(500);
+  await page.selectOption('select[name="cc_exp_year"]', '2027');
+  await page.waitForTimeout(500);
+  await page.fill('input[name="cc_cvv"]', '8651');
+  await page.waitForTimeout(500);
+  await page.click('input[name="book_now"]');
+  await page.waitForTimeout(3000);
+  await page.click('text=Logout');
+  await page.pause();
+  
+  
+})().catch(err => console.error('Error:', err.message));

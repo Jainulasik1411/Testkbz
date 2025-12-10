@@ -1,0 +1,8 @@
+{
+  "testName": "KBZPay Flow Automation",
+  "startTime": "5/12/2025, 4:58:16 pm",
+  "endTime": "5/12/2025, 5:01:41 pm",
+  "duration": "204.92 seconds",
+  "status": "FAILED",
+  "error": "page.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//flt-semantics[@role=\\'button\\' and contains(text(),\\'Deny\\')])[1]')\u001b[22m\n\u001b[2m    - waiting for\" https://staging.flow.stax.run/\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://staging.flow.stax.run/#/dashboard\"\u001b[22m\n"
+}
