@@ -26,8 +26,8 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps chromium
     
-    - name: Run KBZ Tests
-      run: node kbz2-3-parallel.js
+    - name: Run KBZ3 Test
+      run: node tests/kbzpay3-flow.spec.js
     
     - name: Upload test results
       if: always()
